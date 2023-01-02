@@ -1,4 +1,4 @@
-package com.practice.demo2.student;
+package com.practice.demo2.beans;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -28,7 +28,7 @@ public class Student {
 			strategy=GenerationType.SEQUENCE,
 			generator= "student_sequence"
 	)
-	private int id;
+	private long id;
 	private String name ;
 	private String email;
 	private LocalDate dob;

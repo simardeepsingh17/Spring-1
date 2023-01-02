@@ -1,4 +1,4 @@
-package com.practice.demo2.student;
+package com.practice.demo2.controller;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -11,9 +11,14 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.practice.demo2.beans.Student;
+import com.practice.demo2.service.StudentService;
 
 @RestController
 
@@ -53,5 +58,13 @@ public class StudentController {
 		
 		studentservice.deleteStudent(id);
 	}
+	
+	@PutMapping(path="/api/{studentId}")
+	public void updateStudent(@PathVariable("studentId")long id,
+			@RequestParam(required = false) String name,
+			@RequestParam(required = false) String email) {
+		studentservice.updateStudent(id,name,email);
+	}
+	
 	
 }

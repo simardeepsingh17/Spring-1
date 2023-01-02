@@ -27,10 +27,10 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.practice.demo2.Demo2Application;
-import com.practice.demo2.student.Student;
-import com.practice.demo2.student.StudentController;
-import com.practice.demo2.student.StudentRepository;
-import com.practice.demo2.student.StudentService;
+import com.practice.demo2.beans.Student;
+import com.practice.demo2.controller.StudentController;
+import com.practice.demo2.repository.StudentRepository;
+import com.practice.demo2.service.StudentService;
 
 
 @SpringBootTest(classes = Demo2Application.class)

@@ -1,10 +1,13 @@
-package com.practice.demo2.student;
+package com.practice.demo2.config;
 
 import java.time.LocalDate;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.practice.demo2.beans.Student;
+import com.practice.demo2.repository.StudentRepository;
 
 @Configuration
 public class StudentConfig {

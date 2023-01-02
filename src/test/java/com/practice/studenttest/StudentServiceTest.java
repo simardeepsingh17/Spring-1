@@ -20,10 +20,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.practice.demo2.Demo2Application;
-import com.practice.demo2.student.Student;
-import com.practice.demo2.student.StudentRepository;
-import com.practice.demo2.student.StudentService;
-
+import com.practice.demo2.beans.Student;
+import com.practice.demo2.repository.StudentRepository;
+import com.practice.demo2.service.StudentService;
 
 import static org.junit.Assert.assertEquals;
 //import org.junit.Assert.*;
